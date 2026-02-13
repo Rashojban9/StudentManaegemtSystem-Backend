@@ -12,7 +12,7 @@ public class AppConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) {
         return httpSecurity.csrf(c -> c.disable())
                 .authorizeHttpRequests(auth -> auth.requestMatchers("/api/public/**", "/public/**", "/error", "/test").permitAll()
-                        .requestMatchers("/admin/**").hasRole("TEACHER")
+                        .requestMatchers("/admin/**").hasAuthority("TEACHER")
                         .anyRequest().authenticated())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .build();
