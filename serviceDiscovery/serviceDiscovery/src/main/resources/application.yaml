@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: serviceDiscovery
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  server:
+    eviction-interval-timer-in-ms: 1000
+
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+

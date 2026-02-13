@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: StudnetManagementSystemAdmin
+  datasource:
+    url: ${url}
+    username: ${username}
+    password: ${password}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+server:
+  servlet:
+    context-path: /api
+  port: 8087

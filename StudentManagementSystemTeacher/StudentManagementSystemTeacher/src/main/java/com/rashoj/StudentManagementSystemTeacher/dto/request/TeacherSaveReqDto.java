@@ -1,0 +1,26 @@
+package com.rashoj.StudentManagementSystemTeacher.dto.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class TeacherSaveReqDto {
+
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String password;
+    private String bio;
+
+    private LocalDate joinDate;
+    private LocalDate dob;
+
+}
