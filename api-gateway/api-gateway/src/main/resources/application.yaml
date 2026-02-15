@@ -10,3 +10,7 @@ spring:
 
 server:
   port: 9090
+
+app:
+  jwt:
+    secret: ${secretkey:my_super_secret_key_that_is_very_long_1234567890}

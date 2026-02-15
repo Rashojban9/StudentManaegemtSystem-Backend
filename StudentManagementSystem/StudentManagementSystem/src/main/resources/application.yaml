@@ -16,3 +16,7 @@ server:
   servlet:
     context-path: /api
   port: 8083
+app:
+  jwt:
+    secret: ${secretkey}
+    expiration-ms: 86400000
